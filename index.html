@@ -1,27 +1,84 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cluckeria | Papa's Gameria</title>
-    <link rel="icon" href="favicon.png" />
-  </head>
-  <body style="margin: 0; padding: 0">
-    <div
-      id="container"
-      style="position: absolute; width: auto; height: auto; inset: 0"
-    ></div>
-    <script src="../ruffle/ruffle.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa's Gameria - Become The Best Chef!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+        }
+        .game {
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+        .game h2 {
+            color: #4CAF50;
+        }
+        .game p {
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Papa's Gameria</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Games</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <div class="game">
+            <h2>Papa's Pizzeria</h2>
+            <img src="/img/pizzeria.jpg" alt="Papa's Pizzeria">
+            <p>Top, bake, and serve seasonal pizzas!</p>
+            <a href="/games/pizzeria">Play Now</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; <span id="year"></span> Papa's Gameria. All rights reserved by CybriaTech.</p>
+    </footer>    
     <script>
-      window.RufflePlayer = window.RufflePlayer || {};
-      window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("container");
-        player.style.width = "100%";
-        player.style.height = "100%";
-        container.appendChild(player);
-        player.load("cluckeria.swf");
-      });
+        document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
-  </body>
+</body>
 </html>
