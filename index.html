@@ -42,11 +42,13 @@
             margin-bottom: 20px;
             background-color: white;
         }
-        .game h2 {
-            color: #4CAF50;
+        .game img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
         }
-        .game p {
-            color: #666;
+        .game img:hover {
+            transform: scale(1.1);
         }
         footer {
             background-color: #333;
@@ -68,10 +70,9 @@
     </nav>
     <section>
         <div class="game">
-            <h2>Papa's Pizzeria</h2>
-            <img src="/img/pizzeria.jpg" alt="Papa's Pizzeria">
-            <p>Top, bake, and serve seasonal pizzas!</p>
-            <a href="/games/pizzeria">Play Now</a>
+            <a href="/games/pizzeria">
+                <img src="/img/pizzeria.jpg" alt="Papa's Pizzeria">
+            </a>
         </div>
     </section>
     <footer>
