@@ -39,14 +39,9 @@
             padding: 20px;
         }
         .game {
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 10px;
-            background-color: white;
-            flex: 0 0 20%;
-            max-width: 20%;
-            width: 200px;
-            height: 200px; 
+            margin: 10px; /* Adjusted spacing */
+            flex: 0 0 calc(20% - 20px); /* Adjusted width */
+            max-width: calc(20% - 20px); /* Adjusted max width */
             box-sizing: border-box;
         }
         .game img {
@@ -66,22 +61,23 @@
         .games-container {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center; /* Center align game icons */
         }
-    
+
         @media (max-width: 768px) {
             .game {
-                flex: 0 0 50%;
-                max-width: 50%;
+                flex: 0 0 calc(50% - 20px);
+                max-width: calc(50% - 20px);
             }
         }
-    
+
         @media (max-width: 480px) {
             .game {
-                flex: 0 0 100%;
-                max-width: 100%;
+                flex: 0 0 calc(100% - 20px);
+                max-width: calc(100% - 20px);
             }
         }
-    </style>    
+    </style>
 </head>
 <body>
     <header>
@@ -96,71 +92,71 @@
     <section class="games-container">
         <div class="game">
             <a href="/games/pizzeria">
-                <img src="/img/pizzeria.jpg" alt="Papa's Pizzeria" style="width: 100px; height: 100px;">
+                <img src="/img/pizzeria.jpg" alt="Papa's Pizzeria">
             </a>
         </div><div class="game">
             <a href="/games/burgeria">
-                <img src="/img/burgeria.jpg" alt="Papa's Burgeria" style="width: 100px; height: 100px;">
+                <img src="/img/burgeria.jpg" alt="Papa's Burgeria">
             </a>
         </div><div class="game">
             <a href="/games/tacomia">
-                <img src="/img/tacomia.jpg" alt="Papa's Tacomia" style="width: 100px; height: 100px;">
+                <img src="/img/tacomia.jpg" alt="Papa's Tacomia">
             </a>
         </div><div class="game">
             <a href="/games/freezeria">
-                <img src="/img/freezeria.jpg" alt="Papa's Freezeria" style="width: 100px; height: 100px;">
+                <img src="/img/freezeria.jpg" alt="Papa's Freezeria">
             </a>
         </div><div class="game">
             <a href="/games/pancakeria">
-                <img src="/img/pancakeria.jpg" alt="Papa's Pancakeria" style="width: 100px; height: 100px;">
+                <img src="/img/pancakeria.jpg" alt="Papa's Pancakeria">
             </a>
         </div><div class="game">
             <a href="/games/wingeria">
-                <img src="/img/wingeria.jpg" alt="Papa's Wingeria" style="width: 100px; height: 100px;">
+                <img src="/img/wingeria.jpg" alt="Papa's Wingeria">
             </a>
         </div><div class="game">
             <a href="/games/hotdoggeria">
-                <img src="/img/hotdoggeria.jpg" alt="Papa's Hotdoggeria" style="width: 100px; height: 100px;">
+                <img src="/img/hotdoggeria.jpg" alt="Papa's Hotdoggeria">
             </a>
         </div><div class="game">
             <a href="/games/cupcakeria">
-                <img src="/img/cupcakeria.jpg" alt="Papa's Cupcakeria" style="width: 100px; height: 100px;">
+                <img src="/img/cupcakeria.jpg" alt="Papa's Cupcakeria">
             </a>
         </div><div class="game">
             <a href="/games/pastaria">
-                <img src="/img/pastaria.jpg" alt="Papa's Pastaria" style="width: 100px; height: 100px;">
+                <img src="/img/pastaria.jpg" alt="Papa's Pastaria">
             </a>
         </div><div class="game">
             <a href="/games/donuteria">
-                <img src="/img/donuteria.jpg" alt="Papa's Donuteria" style="width: 100px; height: 100px;">
+                <img src="/img/donuteria.jpg" alt="Papa's Donuteria">
             </a>
         </div><div class="game">
             <a href="/games/cheeseria">
-                <img src="/img/cheeseria.jpg" alt="Papa's Cheeseria" style="width: 100px; height: 100px;">
+                <img src="/img/cheeseria.jpg" alt="Papa's Cheeseria">
             </a>
         </div><div class="game">
             <a href="/games/bakeria">
-                <img src="/img/bakeria.jpg" alt="Papa's Bakeria" style="width: 100px; height: 100px;">
+                <img src="/img/bakeria.jpg" alt="Papa's Bakeria">
             </a>
         </div><div class="game">
             <a href="/games/sushiria">
-                <img src="/img/sushiria.jpg" alt="Papa's Sushiria" style="width: 100px; height: 100px;">
+                <img src="/img/sushiria.jpg" alt="Papa's Sushiria">
             </a>
         </div><div class="game">
             <a href="/games/scooperia">
-                <img src="/img/scooperia.jpg" alt="Papa's Scooperia" style="width: 100px; height: 100px;">
+                <img src="/img/scooperia.jpg" alt="Papa's Scooperia">
             </a>
         </div><div class="game">
             <a href="/games/mocharia">
-                <img src="/img/mocharia.jpg" alt="Papa's Mocharia" style="width: 100px; height: 100px;">
+                <img src="/img/mocharia.jpg" alt="Papa's Mocharia">
             </a>
         </div><div class="game">
             <a href="/games/cluckeria">
-                <img src="/img/cluckeria.jpg" alt="Papa's Cluckeria" style="width: 100px; height: 100px;">
+                <img src="/img/cluckeria.jpg" alt="Papa's Cluckeria">
             </a>
         </div><div class="game">
             <a href="/games/paleteria">
-                <img src="/img/paleteria.jpg" alt="Papa's Paleteria" style="width: 100px; height: 100px;">
+                <img src="/img/paleteria.jpg" alt="Papa's Paleteria">
             </a>
         </div>
     </section>    
